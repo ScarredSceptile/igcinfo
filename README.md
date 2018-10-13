@@ -6,6 +6,8 @@ The system must be deployed on either Heroku or Google App Engine, and the Go so
 
 App will be running on https://secret-hollows-32754.herokuapp.com/
 
+═════════════════════════════════════════════════════════════════════════════
+
 How view the app:
 
 All of the application will be under /igcinfo/
@@ -17,6 +19,8 @@ All of the application will be under /igcinfo/
 /igcinfo/api/igc/<id> to get the igc of a given id
   
 /igcinfo/api/igc/<id>/<field> to get the field of an igc with the given id.
+  
+═════════════════════════════════════════════════════════════════════════════
   
 Available fields are:
 
