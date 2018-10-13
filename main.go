@@ -196,8 +196,8 @@ func getTrackField(w http.ResponseWriter, r *http.Request) {
 func main(){
 	http.HandleFunc("/igcinfo/api/igc/", manageTrack)
 	http.HandleFunc("/igcinfo/api/", getMetaInfo)
-	http.HandleFunc("/igcinfo/api/igc/{[0-9]+}/", getTrackById)
-	http.HandleFunc("/igcinfo/api/igc/{[0-9]+}/{[0-9A-Za-z]+}/", getTrackField)
+	http.HandleFunc("/igcinfo/api/igc/{[0-9A-Za-z]+}/", getTrackById)
+	http.HandleFunc("/igcinfo/api/igc/{[0-9]+}/{[A-Za-z]+}/", getTrackField)
 	http.HandleFunc("/igcinfo/", error404)
 	http.HandleFunc("/", error404)
 	http.ListenAndServe(":" + os.Getenv("PORT"), nil)
