@@ -4,4 +4,4 @@ For the development of the IGC processing, you will use an open source IGC libra
 
 The system must be deployed on either Heroku or Google App Engine, and the Go source code must be available for inspection by the teaching staff (read-only access is sufficient).
 
-App will be running on https://secret-hollows-32754.heroku.herokuapp.com/
+App will be running on https://secret-hollows-32754.herokuapp.com/
