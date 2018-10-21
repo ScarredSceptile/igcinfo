@@ -6,7 +6,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/marni/goigc"
 	"net/http"
-	//"os"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -288,6 +288,5 @@ func main() {
 	router.HandleFunc("/igcinfo/", error404)
 	router.HandleFunc("/", error404)
 	//Handler has been changed from nil to router after deadline
-	//":"+os.Getenv("PORT")
-	http.ListenAndServe("127.0.0.1:8080", router)
+	http.ListenAndServe(":"+os.Getenv("PORT"), router)
 }
